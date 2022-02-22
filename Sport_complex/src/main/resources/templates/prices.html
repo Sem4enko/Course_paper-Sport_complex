@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="header :: header"></header>
+
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    <h1 class="display-4 fw-normal">Pricing</h1>
+    <p class="fs-5 text-muted">Choose your best season ticket.</p>
+</div>
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-white bg-primary border-primary">
+                <h4 class="my-0 fw-normal">1 Month</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">200$</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>Gym 2-3 per week</li>
+                    <li>Swimming pool 1 per week</li>
+                    <li>Box club 1 per week </li>
+                    <li>Without sauna</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-white bg-primary border-primary">
+                <h4 class="my-0 fw-normal">6 Month</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">500$</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>Gym on weekdays</li>
+                    <li>Swimming pool 3 per week</li>
+                    <li>Box club 2 per week</li>
+                    <li>Sauna 2 per week</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-white bg-primary border-primary">
+                <h4 class="my-0 fw-normal">1 year</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">1000$</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>Gym every day</li>
+                    <li>Swimming pool 5 per week</li>
+                    <li>Box club 5 per week</li>
+                    <li>Sauna 5 per week</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

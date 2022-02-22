@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All tickets</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="header :: header"></header>
+<div class="container mt-5">
+    <h1 align="center">Add new Ticket</h1>
+    <form action="/add/new/ticket" method="post">
+        <input  name="userName" placeholder="Input your name" type="text" class="form-control"><br>
+        <input  name="userAge" placeholder="Input your age" type="text" class="form-control"><br>
+        <input  name="ticketType" placeholder="Input type of your ticket" type="text" class="form-control"><br>
+
+        <p align="center"> <button type="submit"class="btn btn-warning">Create Topic</button></p>
+    </form>
+</div>
+</div>
+</body>
+</html>
